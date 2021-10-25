@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.lorcdi02.applicationandroimie.ActivityDetailStudent">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!--Ligne nom/prenom-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLastName"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:layout_column="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivStudentImage"
+                android:layout_column="3"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+        </TableRow>
+        <!--Ligne age et mail-->
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/tvMail"
+                android:layout_column="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/tvAge"
+                android:layout_column="1"/>
+
+
+        </TableRow>
+        <!--num tel-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/tvTelephonNumber"
+                android:layout_column="0" />
+        </TableRow>        <!--Ligne promotion actuelle-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/promolbl"
+                android:text="Promotion : "
+                android:layout_column="0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvPromoCurrent"
+                android:layout_column="1"/>
+        </TableRow>
+        <!--Ligne old promo-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/anciennepromotionlbl"
+                android:text="Ancienne Promotion : "
+                android:layout_column="0" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/tvOldPromo"
+                android:layout_column="1" />
+        </TableRow>
+
+        <!--Ligne retard-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/retardlbl"
+                android:text="Retard : "
+                android:layout_column="0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/tvRetard"
+                android:layout_column="1"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details notes"
+                android:id="@+id/btnDetails"
+                android:layout_column="1"
+                android:background="@color/blue" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Commentaire : "
+                android:id="@+id/commentarylbl"
+                android:layout_column="0"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCommentary"
+
+                />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
